@@ -4,6 +4,6 @@ def home(request):
 def about(request):
  return render(request, "core/about.html")
 def portafolios(request):
- return render(request, "core/portfolios.html")
+ return render(request, "core/portafolios.html")
 def contacto(request):
  return render(request, "core/contacto.html")
