@@ -5,7 +5,7 @@ from core import views
 urlpatterns = [
  path('', views.home, name="home"),
  path('about/', views.about, name="about"),
- path('portfolio/', views.portfolio, name="portfolio"),
- path('contact/', views.contact, name="contact"),
+ path('portafolios/', views.portafolios, name="portfolios"),
+ path('contacto/', views.contacto, name="contacto"),
  path('admin/', admin.site.urls),
 ]
