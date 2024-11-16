@@ -14,15 +14,17 @@
     <script src="{% static 'core/js/bootstrap.bundle.js' %}"></script>
     <script src="{% static 'core/js/bootstrap.bundle.min.js' %}"></script>
     <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
-    <title>{% block title %}{% endblock %} | Nacho Sanchez
-        (Ingeniero)</title>
+    <title>{% block title %}{% endblock %} | Alejandro Serrano Catalina
+        (Estudiante de ingenieria matemática)</title>
 </head>
 <body>
-    <h1>Mi Web Personal</h1>
+    <h1>Mi Web Personal<a class="nav-link" href="{% url 'home' %}">   Alejandro Serrano</a></h1> 
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'home' %}">Portada</a>
+               
+                <a class="navbar-brand" href="{% url 'home' %}">Portada </a>
+
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="{% url 'about' %}">Acerca de</a>
