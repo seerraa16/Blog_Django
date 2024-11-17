@@ -1,47 +1,67 @@
-# Pagina 28
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %} | Alejandro Serrano
+        (Ingeniero)</title>
+    
     {% load static %}
-    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">    
-    <script src="{% static 'core/js/jquery.min.js' %}"></script>
-    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'core/js/popper.min.js' %}"></script>
-    <script src="{% static 'core/js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'core/js/bootstrap.js' %}"></script>
-    <script src="{% static 'core/js/bootstrap.bundle.js' %}"></script>
-    <script src="{% static 'core/js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
-    <title>{% block title %}{% endblock %} | Alejandro Serrano Catalina
-        (Estudiante de ingenieria matemática)</title>
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link rel= "stylesheet"href= "{% static 'core/css/bootstrap.css' %}">
+    <link rel= "stylesheet" href="{% static 'core/css/clean-blog.min.css' %}">
+
+
 </head>
 <body>
-    <h1>Mi Web Personal<a class="nav-link" href="{% url 'home' %}">   Alejandro Serrano</a></h1> 
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-               
-                <a class="navbar-brand" href="{% url 'home' %}">Portada </a>
+    <h1>Mi Web Personal</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'home' %}">Alejandro Serrano</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="{% url 'home' %}">Menú</a>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="navbar-link" href="{% url 'home' %}">Portada:</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'about' %}">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'contact' %}">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'about' %}">Acerca de</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'contact' %}">Contacto</a>
-            </li>
-        </ul>
-    </div>
-    {% block content %}{% endblock %}
+    <main class ="container mt-5">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 Alejandro Serrano. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="{% static 'core/js/jquery-3.3.1.slim.min.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/js/contact_me.min.js' %}"></script>
+    <script src="{% static 'core/js/jqBootstrapValidation.min.js' %}"></script>
+    <script src="{% static 'core/js/contact_me.js' %}"></script>
+    <script src="{% static 'core/js/clean-blog.min.js' %}"></script>
+    <script src="{% static 'core/js/clean-blog.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'core/js/bootstrap.js' %}"></script>    
     
-    </body>
+</body>
 </html>
-    
-
-
