@@ -1,18 +1,36 @@
 {% extends 'core/base.html' %}
+{% load static %}
 
 {% block title %}Contacto{% endblock %}
 
+{% block background %}{% static 'core/img/contact-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Contacto</h1>
+<span class="subheading">¡Ponte en contacto conmigo!</span>
+{% endblock %}
+
 {% block content %}
-
 <h2>Contacto</h2>
+<p>Aquí os dejo mi correo y mis redes sociales.</p>
 
-<p>Aquí os dejo mi gmail y mis redes sociales.</p>
+<ul class="contact-list">
+    <!-- Gmail -->
+    <li>
+        <a href="mailto:aserrcat@myuax.com" target="_blank">
+        </a>
+    </li>
 
-<ul>
-    <li><a href="mailto:aserrcat@myuax.com">Gmail</a></li>
-    <li><a href="https://github.com/Seerraa16">Github</a></li>
-    <li><a href="https://linkedin.com/in/alejandro-serrano-094145336">LinkedIn</a></li>
+    <!-- GitHub -->
+    <li>
+        <a href="https://github.com/Seerraa16" target="_blank">
+        </a>
+    </li>
 
+    <!-- LinkedIn -->
+    <li>
+        <a href="https://linkedin.com/in/alejandro-serrano-094145336" target="_blank">
+        </a>
+    </li>
 </ul>
-
 {% endblock %}

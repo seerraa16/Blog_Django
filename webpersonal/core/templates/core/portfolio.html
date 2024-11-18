@@ -1,15 +1,24 @@
 {% extends 'core/base.html' %}
-    
+{% load static %}
+
 {% block title %}Portfolio{% endblock %}
 
+{% block background %}{% static 'core/img/portfolio-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Mi Portfolio</h1>
+<span class="subheading">Descubre mis proyectos y colaboraciones</span>
+{% endblock %}
+
 {% block content %}
-
 <h2>Portfolio</h2>
-
 <p>Este es uno de mis proyectos.</p>
 
 <ul>
-<li><a href="https://github.com/seerraa16/Principios-y-Patrones.-Parcial.git">Parcial Patrones de diseño</a></li>
+    <li>
+        <a href="https://github.com/seerraa16/Principios-y-Patrones.-Parcial.git" target="_blank">
+            DeNexus CSV Analysis
+        </a>
+    </li>
 </ul>
-
 {% endblock %}

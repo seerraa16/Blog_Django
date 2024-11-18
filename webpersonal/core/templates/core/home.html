@@ -1,8 +1,16 @@
 {% extends 'core/base.html' %}
 {% load static %}
+
 {% block title %}Portada{% endblock %}
-{% block background %}{% static 'core/img/home-bg.jpg' %}{% endblock%}
+
+{% block background %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
 {% block headers %}
- <h1>Alejandro Serrano</h1>
- <span class="subheading">Estudiante ingeniería matemática</span>
+<h1>Bienvenido a mi sitio web</h1>
+<span class="subheading">Estudiante de Ingenieria</span>
+{% endblock %}
+
+{% block content %}
+<h2>Portada</h2>
+<p>Bienvenidos a mi sitio web personal. Aquí encontrarás información sobre mis proyectos, mi experiencia y formas de contacto.</p>
 {% endblock %}
